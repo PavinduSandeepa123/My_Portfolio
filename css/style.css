@@ -1,0 +1,345 @@
+/* Basic Code */
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+
+
+
+/* Header Section */
+
+.about-img{
+    margin-left: 0px;
+    right: -60px;
+   }
+   
+   
+   .btn{
+    padding: 10px 25px;
+    border-radius: 100px;
+
+   } 
+   .btn-white{
+     background-color: #ffffff;
+     border:2px solid #ffffff;
+   }
+   .btn-blue{
+     border: 2.4px solid #ffffff;
+     color: #ffffff;
+   }
+
+.hero-text{
+    margin-top: 0px;
+}
+.typed-cursor{
+    font-size: 45px;
+    color: #ffffff;
+}
+.position-absolute{
+    font-weight: 800;
+}
+
+/* Custom Class for Margin */
+.custom-margin-right {
+    margin-right: 30px; /* Adjust the value as needed */
+}
+
+/*--Navigation Menu--*/
+
+a{
+    color: #0bceaf;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+    color: #078571;
+    text-decoration: underline;
+}
+.navbar-light{
+    display: none;
+
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 25px 10px;
+    color: #343a40;
+    font-weight: 500;
+    outline: none;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+    color: #0bceaf;
+}
+
+
+/*-----About Section-----*/
+.blue{
+    background-color: rgb(32, 125, 248);
+    color: #ffffff;
+}
+
+.blue:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0f6eeb;
+    border-radius: 2px solid rgb(20, 109, 241);
+}
+.progress {
+    border-radius: 10 px;
+}
+
+.progress .progress-bar {
+    width: 0px;
+    border-radius: 10 px;
+    transition: 2s;
+}
+
+.display-1{
+    font-size: 150px;
+    font-weight: 1000;
+}
+.position-absolute{
+    font-weight: 700;
+}
+
+/*--Qualification--*/
+.ex-me{
+    margin-top: 35px;
+}
+
+/*--Services--*/
+.service-h4{
+    padding-bottom: 30px;
+  }
+  
+  .service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+  }
+  
+  .service-box{
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);  
+    margin-left: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .service-box:hover{
+    box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705); 
+  
+  }
+  
+/* =================== Portfolio section ==================*/
+
+
+.portfolio-item .portfolio-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+  }
+
+
+  /* ========================== Contact Us ========================*/
+
+.contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+/*====Contact Bar====*/
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding: 0 20px; /* Add padding to create space on left and right */
+}
+
+.contact-form, .contact-details {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-left: 20px; /* Optional, adds some space between the two boxes */
+    margin-right: 20px; /* Optional, adds some space between the two boxes */
+    flex: 1; /* Allow both containers to take up equal space */
+    max-width: 45%; /* Adjust the width as needed */
+}
+
+.contact-form {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.contact-details {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-left: 20px;
+    
+}
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.btn-send {
+    background-color: #078571;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #222; /* Dark background for the footer */
+    color: #fff; /* Text color */
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px; /* Height of the colored line */
+    background-color: rgb(20, 109, 241);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*====Skill Bar====*/
+
+
+
+
+
+.skill-bar-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skill {
+    width: 48%;
+}
+
+.skill p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+}
+
+.skill-percentage {
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Individual Skill Bars with Custom Colors */
+.skill-html {
+    background-color: #ff6347; /* Tomato */
+}
+
+.skill-css {
+    background-color: #4682b4; /* Steel Blue */
+}
+
+.skill-javascript {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.skill-photoshop {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.skill-figma {
+    background-color: #9370db; /* Medium Purple */
+}
+
+.skill-mysql {
+    background-color: #20b2aa; /* Light Sea Green */
+}
+
+.skill-react {
+    background-color: #00bcd4; /* Cyan */
+}
+
+.skill-mongodb {
+    background-color: #32cd32; /* Lime Green */
+}
+
+.skill-nodejs {
+    background-color: #8fbc8f; /* Dark Sea Green */
+}
+
+
+
+
